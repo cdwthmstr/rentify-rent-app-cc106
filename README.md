@@ -1,6 +1,6 @@
 <div align="center">
 
-# <img src="https://api.iconify.design/tabler:key.svg?color=%23ff6b6b&width=40" width="34" style="vertical-align:middle" /> Rentify
+# <img src="https://api.iconify.design/tabler:repeat.svg?color=%23ff6b6b&width=40" width="34" style="vertical-align:middle" /> Rentify
 
 **Why buy it when you can rentify it? A peer-to-peer rental platform landing experience, built for CC106**
 
