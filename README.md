@@ -10,6 +10,9 @@
 <br />
 
 <img src="https://skillicons.dev/icons?i=html,css,js" />
+
+<br />
+
 <img src="https://img.shields.io/badge/Font_Awesome-528DD7?style=flat-square&logo=fontawesome&logoColor=white" />
 <img src="https://img.shields.io/badge/Google_Fonts-4285F4?style=flat-square&logo=googlefonts&logoColor=white" />
 
