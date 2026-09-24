@@ -7,9 +7,13 @@
 <img src="https://img.shields.io/badge/status-coursework-ff6b6b?style=for-the-badge" />
 <img src="https://img.shields.io/badge/course-CC106-1a2440?style=for-the-badge" />
 
+<br />
+
 <img src="https://skillicons.dev/icons?i=html,css,js" />
 <img src="https://img.shields.io/badge/Font_Awesome-528DD7?style=flat-square&logo=fontawesome&logoColor=white" />
 <img src="https://img.shields.io/badge/Google_Fonts-4285F4?style=flat-square&logo=googlefonts&logoColor=white" />
+
+<br />
 
 <p>
   <a href="https://retlify-v2-g8.netlify.app/pages/index.html">Live Demo</a> &middot;
