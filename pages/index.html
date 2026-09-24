@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=8798305e-c346-4199-96a5-ef562e8bf296
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rentify - Rent Anything, Anytime</title>
+		<link
+			rel="shortcut icon"
+			href="/assets/images/logos/rentify-logo-only.svg"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="../assets/styles/base.css" />
+		<link rel="stylesheet" href="../assets/styles/layout.css" />
+		<link rel="stylesheet" href="../assets/styles/landing.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar">
+			<div class="nav-container">
+				<a class='nav-logo' href='/pages/'>
+					<img
+						src="../assets/images/logos/rentify-logo-white-small.svg"
+						alt="Rentify"
+						class="logo-white"
+					/>
+				</a>
+
+				<div class="nav-links" id="navLinks">
+					<a href='/pages/about'>About</a>
+					<a class='btn-login' href='/pages/auth'>Sign In</a>
+				</div>
+
+				<div class="hamburger" id="hamburger" aria-label="Menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section class="hero">
+			<!-- Animated Gradient Background -->
+			<div class="gradient-bg">
+				<div class="gradient gradient-1"></div>
+				<div class="gradient gradient-2"></div>
+				<div class="gradient gradient-3"></div>
+			</div>
+
+			<div class="hero-content">
+				<h1 class="hero-title">
+					Why buy it when you can
+					<span class="gradient-text">rentify</span> it?
+				</h1>
+				<p class="hero-subtext">
+					Join thousands who are renting smarter. Safe, verified, and
+					lightning fast.
+				</p>
+				<div class="hero-buttons">
+					<a
+						href="#"
+						class="btn btn-primary"
+						id="rentButton"
+						onclick="handleRentClick(event)"
+					>
+						<i class="fas fa-shopping-cart"></i> I Want to Rent
+					</a>
+					<a
+						href="#"
+						class="btn btn-outline"
+						id="lendButton"
+						onclick="handleLendClick(event)"
+					>
+						<i class="fas fa-hand-holding-usd"></i> I Want to Lend
+					</a>
+				</div>
+				<p class="hero-note">No credit card required to get started</p>
+			</div>
+
+			<!-- Scroll Down Container -->
+			<div class="scroll-down-container">
+				<a href="#browse" class="scroll-down">
+					<span class="scroll-text">Learn more</span>
+					<span class="scroll-arrow">
+						<i class="fas fa-chevron-down"></i>
+					</span>
+				</a>
+			</div>
+		</section>
+
+		<!-- Trusted By Section -->
+		<section class="trusted-by">
+			<div class="container">
+				<div class="trusted-by-content">
+					<p>Trusted by leading companies worldwide</p>
+					<div class="company-logos">
+						<div class="logo-slide">
+							<!-- First Set -->
+							<div class="logo-item">
+								<i class="fab fa-google"></i>
+								<span>Google</span>
+							</div>
+							<div class="logo-item">
+								<i class="fab fa-aws"></i>
+								<span>AWS</span>
+							</div>
+							<div class="logo-item">
+								<i class="fab fa-microsoft"></i>
+								<span>Microsoft</span>
+							</div>
+							<div class="logo-item">
+								<i class="fab fa-apple"></i>
+								<span>Apple</span>
+							</div>
+							<div class="logo-item">
+								<img
+									src="../assets/images/logos/shopee.svg"
+									alt="Shopee"
+									class="company-logo"
+								/>
+								<span>Shopee</span>
+							</div>
+							<div class="logo-item">
+								<i class="fas fa-shopping-bag"></i>
+								<span>Lazada</span>
+							</div>
+							<div class="logo-item">
+								<i class="fas fa-briefcase"></i>
+								<span>Raket PH</span>
+							</div>
+							<div class="logo-item">
+								<i class="fas fa-search-dollar"></i>
+								<span>JobStreet</span>
+							</div>
+							<div class="logo-item">
+								<i class="fab fa-linkedin"></i>
+								<span>LinkedIn</span>
+							</div>
+							<div class="logo-item">
+								<img
+									src="../assets/images/logos/adobe.svg"
+									alt="Adobe"
+									class="company-logo"
+								/>
+								<span>Adobe</span>
+							</div>
+							<!-- End First Set -->
+
+							<!-- Second Set (Duplicate for seamless loop) -->
+							<div class="logo-item">
+								<i class="fab fa-google"></i>
+								<span>Google</span>
+							</div>
+							<div class="logo-item">
+								<i class="fab fa-aws"></i>
+								<span>AWS</span>
+							</div>
+							<div class="logo-item">
+								<i class="fab fa-microsoft"></i>
+								<span>Microsoft</span>
+							</div>
+							<div class="logo-item">
+								<i class="fab fa-apple"></i>
+								<span>Apple</span>
+							</div>
+							<div class="logo-item">
+								<img
+									src="../assets/images/logos/shopee.svg"
+									alt="Shopee"
+									class="company-logo"
+								/>
+								<span>Shopee</span>
+							</div>
+							<div class="logo-item">
+								<i class="fas fa-shopping-bag"></i>
+								<span>Lazada</span>
+							</div>
+							<div class="logo-item">
+								<i class="fas fa-briefcase"></i>
+								<span>Raket PH</span>
+							</div>
+							<div class="logo-item">
+								<i class="fas fa-search-dollar"></i>
+								<span>JobStreet</span>
+							</div>
+							<div class="logo-item">
+								<i class="fab fa-linkedin"></i>
+								<span>LinkedIn</span>
+							</div>
+							<div class="logo-item">
+								<img
+									src="../assets/images/logos/adobe.svg"
+									alt="Adobe"
+									class="company-logo"
+								/>
+								<span>Adobe</span>
+							</div>
+							<!-- End Second Set -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- How It Works Section -->
+		<section class="how-it-works" id="how-it-works">
+			<div class="container">
+				<h2>How It Works</h2>
+				<div class="toggle-container">
+					<!-- Step 1 -->
+					<div class="toggle-item">
+						<button class="toggle-header">
+							<span class="step-number">1</span>
+							<span class="toggle-title">Create an Account</span>
+							<span class="toggle-icon">+</span>
+						</button>
+						<div class="toggle-content">
+							<p>
+								Sign up for free in just a few easy steps. No
+								credit card required to get started!
+							</p>
+						</div>
+					</div>
+
+					<!-- Step 2 -->
+					<div class="toggle-item">
+						<button class="toggle-header">
+							<span class="step-number">2</span>
+							<span class="toggle-title"
+								>Browse or List Items</span
+							>
+							<span class="toggle-icon">+</span>
+						</button>
+						<div class="toggle-content">
+							<p>
+								Find what you need or list your own items for
+								rent. We've got everything from tools to tech!
+							</p>
+						</div>
+					</div>
+
+					<!-- Step 3 -->
+					<div class="toggle-item">
+						<button class="toggle-header">
+							<span class="step-number">3</span>
+							<span class="toggle-title">Connect & Rent</span>
+							<span class="toggle-icon">+</span>
+						</button>
+						<div class="toggle-content">
+							<p>
+								Message the owner, agree on terms, and arrange
+								for pickup or delivery.
+							</p>
+						</div>
+					</div>
+
+					<!-- Step 4 -->
+					<div class="toggle-item">
+						<button class="toggle-header">
+							<span class="step-number">4</span>
+							<h3>Enjoy & Return</h3>
+							<span class="toggle-icon">+</span>
+						</button>
+						<div class="toggle-content">
+							<p>
+								Use the item for your needs, then return it in
+								the same condition. It's that simple!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-logo">
+						<img
+							src="../assets/images/logos/rentify-logo-white-small.svg"
+							alt="Rentify"
+						/>
+						<p>Rent anything, anytime, anywhere.</p>
+					</div>
+					<div class="footer-links">
+						<h3>Quick Links</h3>
+						<a href="#">About Us</a>
+						<a href="#">Contact</a>
+						<a href="#">Terms of Service</a>
+						<a href="#">Privacy Policy</a>
+					</div>
+					<div class="social-links">
+						<h3>Follow Us</h3>
+						<div class="social-icons">
+							<a href="#"><i class="fab fa-facebook"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-linkedin"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; 2025 rentify. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="../assets/scripts/main.js"></script>
+		<script src="../assets/scripts/auth-check.js"></script>
+	</body>
+</html>
